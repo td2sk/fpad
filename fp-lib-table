@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "kbd")(type "KiCad")(uri "${KIPRJMOD}/external/kbd/kicad-footprints/kbd.pretty")(options "")(descr ""))
+  (lib (name "Switches")(type "KiCad")(uri "${KIPRJMOD}/external/SparkFun-KiCad-Libraries/Footprints/Switches.pretty")(options "")(descr ""))
+  (lib (name "snapeda")(type "KiCad")(uri "${KIPRJMOD}/external/snapeda")(options "")(descr ""))
+  (lib (name "my")(type "KiCad")(uri "${KIPRJMOD}/my/my.pretty")(options "")(descr ""))
+)

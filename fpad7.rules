@@ -1,0 +1,87 @@
+
+(rules PCB fpad7
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 25)
+    (layer_rule Front
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule Back
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 127.0)
+    (clear 127.0)
+    (clear 63.5 (type smd_to_turn_gap))
+    (clear 250.0 (type default-kicad))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle Front 600.0 0.0 0.0)
+    )
+    (shape
+      (circle Back 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+  (class "kicad_default"
+    /SDB GND /ROW1 "Net-(D1-A)" "Net-(D2-A)" "Net-(D3-A)" "Net-(D4-A)" /ROW2
+    "Net-(D5-A)" "Net-(D6-A)" "Net-(D7-A)" "Net-(D8-A)" /ROW3 "Net-(D9-A)" "Net-(D10-A)" "Net-(D11-A)"
+    "Net-(D12-A)" /ROW4 "Net-(D13-A)" "Net-(D14-A)" "Net-(D15-A)" "Net-(D16-A)" VCC /SCL
+    /SDA "/LED_IN" "Net-(LED1-DOUT)" "Net-(LED2-DOUT)" "Net-(LED3-DOUT)" "Net-(LED4-DOUT)" "Net-(LED5-DOUT)" "Net-(LED6-DOUT)"
+    "Net-(LED7-DOUT)" "Net-(LED8-DOUT)" "Net-(LED10-DIN)" "Net-(LED10-DOUT)" "Net-(LED11-DOUT)" "Net-(LED12-DOUT)" "Net-(LED13-DOUT)" "Net-(LED14-DOUT)"
+    "Net-(LED15-DOUT)" "/LED_OUT" "Net-(U3-ISET)" /RESET "/ROT1_R" "/ROT1_G" "/ROT_SW1" "/ROT1_B"
+    /ROT11 /ROT12 "/ROT2_R" "/ROT2_G" "/ROT_SW2" "/ROT2_B" /ROT21 /ROT22
+    "/ROT3_R" "/ROT3_G" "/ROT_SW3" "/ROT3_B" /ROT31 /ROT32 "/ROT4_R" "/ROT4_G"
+    "/ROT_SW4" "/ROT4_B" /ROT41 /ROT42 "/ROT5_R" "/ROT5_G" "/ROT_SW5" "/ROT5_B"
+    /ROT51 /ROT52 /COL1 /COL2 /COL3 /COL4 /B3 /SW
+    /X /Y /A2 /A3 /RAW /P17 /OUT16 /OUT17
+    /OUT18 /~{INT} "unconnected-(S6-PadD)" "unconnected-(S6-PadC)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer Front Back)
+    )
+  )
+)

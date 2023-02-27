@@ -1,0 +1,7 @@
+[submodule "SparkFun-KiCad-Libraries"]
+path = external/SparkFun-KiCad-Libraries
+url = https://github.com/sparkfun/SparkFun-KiCad-Libraries
+
+[submodule "kbd"]
+path = external/kbd
+url = https://github.com/foostan/kbd
