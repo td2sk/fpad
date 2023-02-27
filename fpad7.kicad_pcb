@@ -3391,6 +3391,11 @@
       (net 23 "VCC") (pinfunction "VCC") (pintype "power_in") (tstamp ee103fd8-3d67-4670-a3af-9e2c2ba23825))
     (pad "4" thru_hole circle (at 3.81 0) (size 1.397 1.397) (drill 0.8128) (layers "*.Cu" "F.SilkS" "B.Mask")
       (net 2 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 5189be8d-a4a7-4ce4-bc5c-33e7085252de))
+    (model "${KIPRJMOD}/external/kbd/kicad-packages3D/kbd.3dshapes/OLED Module with Soldered.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "kbd:CherryMX_Hotswap" (layer "F.Cu")
