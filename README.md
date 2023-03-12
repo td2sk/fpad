@@ -4,7 +4,9 @@
 
 ## 概要
 
-(TODO)
+- キースイッチ x16
+- フルカラー LED 内蔵ロータリーエンコーダー x5
+- ジョイスティック x1
 
 ## ライセンス
 
@@ -15,6 +17,17 @@ LICENSE に記載の通り、MIT License とする
 - fpad: 回路基板
 - fpad_bottom: ボトムプレート
 - fpad_top: トッププレート
+
+## バージョン
+
+- latest (推奨)
+  - ルートディレクトリのデータ
+- rev1 (非推奨)
+  - [releases/rev1](releases/rev1)のデータ
+
+## バグ
+
+- rev1 のバグについては [rev1/errata.md](releases/rev1/errata.md) を参照
 
 ## external
 
