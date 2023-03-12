@@ -2,39 +2,39 @@
 
 ![fpad](images/fpad.png)
 
-## 概要
+## Features
 
-- キースイッチ x16
-- フルカラー LED 内蔵ロータリーエンコーダー x5
-- ジョイスティック x1
+- Key switch (Cherry MX compatible) x16
+- Rotary Encoder - Illuminated (RGB) x5
+- JoyStick x1
 
-## ライセンス
+## License
 
-LICENSE に記載の通り、MIT License とする
+- MIT License
 
-## 構成
+## Files
 
-- fpad: 回路基板
-- fpad_bottom: ボトムプレート
-- fpad_top: トッププレート
+- fpad7.kicad_pcb: main board
+- fpad_bottom.kicad_pcb: bottom plate
+- fpad_top.kicad_pcb: top plate
 
-## バージョン
+## Versions
 
-- latest (推奨)
-  - ルートディレクトリのデータ
-- rev1 (非推奨)
-  - [releases/rev1](releases/rev1)のデータ
+- latest (recommended)
+  - in root directory
+- rev1 (deprecated)
+  - in [releases/rev1](releases/rev1)
 
-## バグ
+## Issues
 
-- rev1 のバグについては [rev1/errata.md](releases/rev1/errata.md) を参照
+- [rev1/errata.md](releases/rev1/errata.md)
 
-## external
+## External files
 
 ### 3D CONTENTCENTRAL
 
-以下の 3D モデルは [3D CONTENTCENTRAL](https://www.3dcontentcentral.com/)から取得している。
-ライセンスの関係で本リポジトリには含めないため、必要に応じて各自で取得し以下パスに配置すること
+The following 3D models are obtained from [3D CONTENTCENTRAL](https://www.3dcontentcentral.com/).
+They are not included in this repository due to license, so please obtain them on your own and place them in the following paths.
 
 - [Keycap](https://www.3dcontentcentral.com/secure/download-model.aspx?catalogid=171&id=941483)
   - external/3dcontentcentral/Mx_Keycap.step
@@ -45,8 +45,8 @@ LICENSE に記載の通り、MIT License とする
 
 ### SnapEDA
 
-https://www.snapeda.com/about/FAQ/ の通り、 Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) に従う
+SnapEDA files are provided under this license as described in the following [FAQ - SnapEDA](https://www.snapeda.com/about/FAQ/).
 
 ### kbd, SparkFun-KiCAD-Libraries
 
-オリジナルのライセンスに準拠する
+Comply with the original license
