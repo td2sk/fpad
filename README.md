@@ -8,6 +8,7 @@
 - Rotary Encoder - Illuminated (RGB) x5
 - JoyStick x1
 - Display
+- QMK Firmware (TODO)
 
 ## License
 
