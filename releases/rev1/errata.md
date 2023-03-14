@@ -25,3 +25,4 @@
 ## Rotary encoder
 
 - Pin C (voltage base of rotary detection line) should be GND
+- Pin 3 (push switch) should be pull down
