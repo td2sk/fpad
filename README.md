@@ -1,6 +1,6 @@
 # fpad KiCAD data
 
-![fpad](images/fpad.png)
+![fpad](https://i.imgur.com/LPFezWr.jpeg)
 
 ## Features
 
