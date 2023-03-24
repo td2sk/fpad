@@ -1,0 +1,99 @@
+{
+    "keyboard_name": "fpad",
+    "manufacturer": "td2sk",
+    "url": "https://github.com/td2sk/fpad",
+    "maintainer": "td2sk",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x1185",
+        "vid": "0xFEED"
+    },
+    "debounce": 5,
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "encoder": true,
+        "encoder_map": true,
+        "joystick": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "matrix_pins": {
+        "cols": ["D3", "D2", "D4", "C6", "NO_PIN"],
+        "rows": ["NO_PIN", "D7", "E6", "B4", "B5"]
+    },
+    "matrix_size": {
+        "cols": 5,
+        "rows": 5
+    },
+    "processor": "atmega32u4",
+    "layouts": {
+        "LAYOUT_ortho_5x5": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [0, 1], "x": 1, "y": 0 },
+                { "matrix": [0, 2], "x": 2, "y": 0 },
+                { "matrix": [0, 3], "x": 3, "y": 0 },
+                { "matrix": [0, 4], "x": 4, "y": 0 },
+
+                { "matrix": [1, 0], "x": 0, "y": 1, "label": "7" },
+                { "matrix": [1, 1], "x": 1, "y": 1, "label": "8" },
+                { "matrix": [1, 2], "x": 2, "y": 1, "label": "9" },
+                { "matrix": [1, 3], "x": 3, "y": 1, "label": "/" },
+                { "matrix": [1, 4], "x": 4, "y": 1 },
+
+                { "matrix": [2, 0], "x": 0, "y": 2, "label": "4" },
+                { "matrix": [2, 1], "x": 1, "y": 2, "label": "5" },
+                { "matrix": [2, 2], "x": 2, "y": 2, "label": "6" },
+                { "matrix": [2, 3], "x": 3, "y": 2, "label": "*" },
+                { "matrix": [2, 4], "x": 4, "y": 2 },
+
+                { "matrix": [3, 0], "x": 0, "y": 3, "label": "1" },
+                { "matrix": [3, 1], "x": 1, "y": 3, "label": "2" },
+                { "matrix": [3, 2], "x": 2, "y": 3, "label": "3" },
+                { "matrix": [3, 3], "x": 3, "y": 3, "label": "-"},
+                { "matrix": [3, 4], "x": 4, "y": 3 },
+
+                { "matrix": [4, 0], "x": 0, "y": 4, "label": "0" },
+                { "matrix": [4, 1], "x": 1, "y": 4, "label": "." },
+                { "matrix": [4, 2], "x": 2, "y": 4, "label": "Enter" },
+                { "matrix": [4, 3], "x": 3, "y": 4, "label": "+" },
+                { "matrix": [4, 4], "x": 4, "y": 4 }
+            ]
+        }
+    },
+    "rgb_matrix": {
+        "layout": [
+            { "matrix": [1, 3], "flags": 4, "x": 168, "y": 16 },
+            { "matrix": [1, 2], "flags": 4, "x": 112, "y": 16 },
+            { "matrix": [1, 1], "flags": 4, "x": 56, "y": 16 },
+            { "matrix": [1, 0], "flags": 4, "x": 0, "y": 16 },
+
+            { "matrix": [2, 0], "flags": 4, "x": 168, "y": 32 },
+            { "matrix": [2, 1], "flags": 4, "x": 112, "y": 32 },
+            { "matrix": [2, 2], "flags": 4, "x": 56, "y": 32 },
+            { "matrix": [2, 3], "flags": 4, "x": 0, "y": 32 },
+
+            { "matrix": [3, 3], "flags": 4, "x": 168, "y": 48 },
+            { "matrix": [3, 2], "flags": 4, "x": 112, "y": 48 },
+            { "matrix": [3, 1], "flags": 4, "x": 56, "y": 48 },
+            { "matrix": [3, 0], "flags": 4, "x": 0, "y": 48 },
+
+            { "matrix": [4, 0], "flags": 4, "x": 168, "y": 64 },
+            { "matrix": [4, 1], "flags": 4, "x": 112, "y": 64 },
+            { "matrix": [4, 2], "flags": 4, "x": 56, "y": 64 },
+            { "matrix": [4, 3], "flags": 4, "x": 0, "y": 64 },
+
+            { "matrix": [0, 0], "flags": 4, "x": 0, "y": 0 },
+            { "matrix": [0, 1], "flags": 4, "x": 56, "y": 0 },
+            { "matrix": [0, 2], "flags": 4, "x": 112, "y": 0 },
+            { "matrix": [0, 3], "flags": 4, "x": 168, "y": 0 },
+            { "matrix": [2, 4], "flags": 4, "x": 224, "y": 56 }
+        ]
+    }
+}
